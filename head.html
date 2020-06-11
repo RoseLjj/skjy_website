@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/global.min.css?v=1.0.0">
+   <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <input type="hidden" id="get-parent" />
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="m" role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li class="m" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li class="m" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li class="m" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    var num = $('#get-parent').val() || 0
+    console.log(num)
+    jQuery(".nav").slide({
+        type: "menu",
+        titCell: ".m",
+        targetCell: ".sub",
+        effect: "slideDown",
+        delayTime: 300,
+        triggerTime: 100,
+        defaultIndex: 2,
+        returnDefault: true
+    });
+  </script>
+</body>
+</html>
