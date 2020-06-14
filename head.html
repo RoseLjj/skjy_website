@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/global.min.css?v=1.0.0">
-   <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-  <input type="hidden" id="get-parent" />
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="m" role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li class="m" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li class="m" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li class="m" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
+  <input type="hidden" id="top-parent" />
+  <!-- 顶部 -->
+  <div class="header-top">
+    <img src="images/home_top_logo.png" alt="">
+  </div>
+  <!-- 导航 -->
+  <div class="head-nav">
+    <ul class="head-nav-content" role="tablist">
+      <li class="m" role="presentation">
+        <a href="/">
+          <span class="name-zh">首页</span>
+          <span class="name-en">Home</span>
+        </a></li>
+      <li class="m" role="presentation">
+        <a href="about.html">
+          <span class="name-zh">关于品牌</span>
+          <span class="name-en">About sk</span>
+        </a>
+      </li>
+      <li class="m" role="presentation">
+        <a href="#messages">
+          <span class="name-zh">职业装定制</span>
+          <span class="name-en">Business Suits</span>
+        </a></li>
+      <li class="m" role="presentation">
+        <a href="tailor.html">
+          <span class="name-zh">私人定制</span>
+          <span class="name-en">Personal Tailor</span>
+        </a>
+      </li>
+      <li class="m" role="presentation">
+        <a href="customer.html">
+          <span class="name-zh">品牌客户</span>
+          <span class="name-en">Customers</span>
+        </a>
+      </li>
+      <li class="m" role="presentation">
+        <a href="contact.html">
+          <span class="name-zh">联系我们</span>
+          <span class="name-en">Contact us</span>
+        </a>
+      </li>
+    </ul>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.SuperSlide.2.1.1.js"></script>
   <script>
-    var num = $('#get-parent').val() || 0
+    var num = $('#top-parent').val()
     console.log(num)
-    jQuery(".nav").slide({
-        type: "menu",
-        titCell: ".m",
-        targetCell: ".sub",
-        effect: "slideDown",
-        delayTime: 300,
-        triggerTime: 100,
-        defaultIndex: 2,
-        returnDefault: true
+    jQuery(".head-nav-content").slide({
+      type: "menu",
+      titCell: ".m",
+      targetCell: ".sub",
+      effect: "slideDown",
+      delayTime: 300,
+      triggerTime: 100,
+      defaultIndex: num,
+      returnDefault: true
     });
   </script>
 </body>
+
 </html>

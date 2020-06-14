@@ -1,0 +1,163 @@
+@import "global.scss";
+.contact-container{
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 148px;
+  &::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    background-image: url(../images/home_seg@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+  }
+  .contact-content{
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2);
+    background-color: $color-fff;
+    padding: 167px 294px 127px 282px;
+    position: relative;
+    .contact-logo{
+      width: 390px;
+      height: 200px;
+      position: absolute;
+      right: 24px;
+      top: -38px;
+    }
+    .contact-form{
+      .form-group{
+        position: relative;
+        padding-left: 100px;
+        padding-right: 45px;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+        .control-label{
+          width: 100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: left;
+          font-size: $font-size-14;
+          font-weight: normal;
+        }
+        .control-form-content{
+          // width: 100%;
+          
+          .form-control{
+            background-color: $color-9;
+            border:none;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: $font-size-14;
+            height: 42px;
+          }
+          .form-control2{
+            height: auto;
+          }
+        }
+      }
+      .form-group-2{
+        display: inline-block;
+        width: 49.4%;
+      }
+      .dropdown{
+        button{
+          text-align: left;
+          position: relative;
+          .caret{
+            color: $color-25;
+            position: absolute;
+            right: 10px;
+            top: 19px;
+          }
+        }
+        .dropdown-menu{
+          border-radius: 0;
+          width: 100%;
+          background:$color-fff;
+          border:1px solid $color-15;
+          padding: 0;
+          li{
+            a{
+              line-height: 40px;
+              &:hover{
+                background-color: $color-4;
+              }
+            }
+          }
+        }
+      }
+      .form-btn{
+        text-align: right;
+        button{
+          width: 130px;
+          height: 50px;
+          background:$color-15;
+          border:1px solid $color-65;
+          border-radius: 0;
+          font-size: $font-size-14;
+          color: $color-100;
+          &:hover,&:active{
+            background:$color-85;
+            color: $color-fff;
+          }
+        }
+      }
+    }
+    .contact-info{
+      text-align: center;
+      margin-top: 70px;
+      color: $color-65;
+      line-height: 19px;
+    }
+  }
+}
+.modal{
+  .modal-dialog{
+    width: 480px;
+    top: 50%;
+    margin-top: -100px;
+    .modal-content{
+      padding: 32px 0;
+      text-align: center;
+      .modal-title{
+        margin-bottom: 36px;
+        font-size: 15px;
+      }
+      .modal-btn{
+        button{
+          width:120px;
+          height:40px;
+          border:1px solid rgba(0,0,0,0.65);
+          &:nth-of-type(2){
+            margin-left: 20px;
+            background:rgba(4,0,0,1);
+            color: #fff;
+            font-size: $font-size-14;
+          }
+        }
+      }
+    }
+  }
+}
+.success-tips{
+  position: fixed;
+  top: 88px;
+  width:480px;
+  height:60px;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 12px 0px rgba(0,0,0,0.4);
+  border-radius:8px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-align: center;
+  left: 50%;
+  margin-left: -240px;
+  display: none;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于品牌</title>
+  <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/about.min.css">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="sk-head" id="headBody"></div>
+  <!-- 面包屑 -->
+  <div class="sk-crumbs sk-container clearfix">
+    <ol class="fl breadcrumb">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="about.html">关于品牌</a></li>
+      <li class="now-crumbs"></li>
+    </ol>
+    <div class="fr right-crumbs">
+      <span>BRAND STORY / </span>
+      <span class="now-crumbs"></span>
+    </div>
+  </div>
+  <!-- 内容 -->
+  <div class="sk-container about-container">
+    <div class="sol-int-content">
+      <div class="sol-top">
+        <ul>
+          <li class="on"><span>品牌释义</span></li>
+          <li><span>品牌理念与愿景</span></li>
+          <li><span>服务与承诺</span></li>
+        </ul>
+      </div>
+      <div class="tab-content bd">
+        <div role="tabpanel" class="bd-c tab-pane active" id="home">
+          <div class="about-title">BRAND STORY / 圣凯嘉悦</div>
+          <div class="about-content">
+            <div>北京圣凯佳悦服装有限公司 成立于2015年，是融职业装研究、设计、服务、生产和销售、于一体的专业企业，坐落在文化底蕴深厚的北京市密云区。</div>
+            <div>公司主要产品包括团体男女西装、时装、商务休闲装、衬衫、T恤、文化衫、服饰、私人定制和各类工服等。 </div>
+          </div>
+          <div class="about-img">
+            <img src="images/img_about_service.png" alt="">
+          </div>
+        </div>
+        <div role="tabpanel" class="bd-c tab-pane" id="profile">
+          <div class="about-title">BRAND STORY / 理念与愿景</div>
+          <div class="about-content">
+            <div>
+              圣凯嘉悦服饰经过不懈的努力，赢得了客户的广泛认同和信赖，我们秉承“客户第一”的经营理念，把”为客户创造价值“作为我们始终追求的目标，我们愿以执着的务实精神，为您提供优质的产品和体贴的服务，努力为客户创造更多价值，在不断前进的道路上，做您信赖的商业合作伙伴！
+            </div>
+          </div>
+          <div class="about-img">
+            <img src="images/img_about_idea.png" alt="">
+          </div>
+        </div>
+        <div role="tabpanel" class="bd-c tab-pane" id="messages">
+          <div class="about-title">BRAND STORY / 服务与承诺</div>
+          <div class="about-content">
+            <div>我们服务于：</div>
+            <div>企事业单位、银行证券、工矿企业、星级酒店、餐饮业、房产物业、航空铁路、学校、商业连锁公司等。 </div>
+            <div>创意设计： </div>
+            <div>公司根据客户行业特征，企业文化，工作环境等特定因素，将服装设计，生产制作的完美理念融入到客户文化中，为企业着装进行量体定做。 </div>
+            <div>优质服务： </div>
+            <div>为客户提供设计、量体、选料、裁剪、制作到免费成衣配送，实行售前、售中、售后全面而快捷的服务。</div>
+          </div>
+          <div class="about-img">
+            <img src="images/img_about_brand.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sk-bottom" id="bottomBody"></div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    // 引入头部
+    $("#headBody").load("head.html?v=1.0.0", function () {
+      $("#top-parent").val(1);
+    });
+    // 引入底部
+    $("#bottomBody").load("bottom.html?v=1.0.0", function () {
+      $("#bottom-parent").val(1);
+    });
+    var aboutList = ['品牌释义', '理念与愿景', '服务与承诺'];
+    $('.now-crumbs').text(aboutList[0])
+    $('.sol-top li').click(function (e) {
+      console.log(e.target)
+      console.log($(this).index())
+      var index = $(this).index()
+      $('.bd .bd-c').slideUp().eq(index).slideDown()
+      $('.sol-top li').removeClass('on').eq(index).addClass('on')
+      $('.now-crumbs').text(aboutList[index])
+    })
+
+  </script>
+</body>
+
+</html>
