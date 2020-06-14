@@ -1,6 +1,10 @@
 @import "global.scss";
+.head-nav{
+  box-shadow: none !important;
+}
 .home-container{
   padding-bottom: 72px;
+  // 轮播
   .carousel{
     width: 1820px;
     height: 700px;
