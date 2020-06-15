@@ -16,6 +16,9 @@
 
 <body>
   <div class="sk-head" id="headBody"></div>
+  <div class="suit-banner">
+    <img src="images/business_details_banner@2x.png" alt="">
+  </div>
   <!-- 面包屑 -->
   <div class="sk-crumbs sk-container clearfix">
     <ol class="fl breadcrumb">
@@ -44,29 +47,29 @@
             <div class="suit-menu-title">男职业装</div>
             <ul>
               <li class="active"><a href="javascript:;">男士商务西装</a></li>
-              <li><a href="javascript:;"></a>男士休闲西装</a></li>
-              <li><a href="javascript:;"></a>男士宴会礼服</a></li>
-              <li><a href="javascript:;"></a>男士西服马甲</a></li>
-              <li><a href="javascript:;"></a>男士大衣</a></li>
-              <li><a href="javascript:;"></a>男士皮鞋</a></li>
-              <li><a href="javascript:;"></a>男士衬衫</a></li>
+              <li><a href="javascript:;">男士休闲西装</a></li>
+              <li><a href="javascript:;">男士宴会礼服</a></li>
+              <li><a href="javascript:;">男士西服马甲</a></li>
+              <li><a href="javascript:;">男士大衣</a></li>
+              <li><a href="javascript:;">男士皮鞋</a></li>
+              <li><a href="javascript:;">男士衬衫</a></li>
             </ul>
           </div>
           <div class="suit-menu-one">
             <div class="suit-menu-title">女职业装</div>
             <ul>
               <li><a href="javascript:;">商务女套装</a></li>
-              <li><a href="javascript:;"></a>女装大衣</a></li>
-              <li><a href="javascript:;"></a>女士衬衫</a></li>
+              <li><a href="javascript:;">女装大衣</a></li>
+              <li><a href="javascript:;">女士衬衫</a></li>
             </ul>
           </div>
           <div class="suit-menu-one">
             <div class="suit-menu-title">中式正装</div>
             <ul>
               <li><a href="javascript:;">中式外套</a></li>
-              <li><a href="javascript:;"></a>中式裙装</a></li>
-              <li><a href="javascript:;"></a>中式大衣男</a></li>
-              <li><a href="javascript:;"></a>中式大衣女</a></li>
+              <li><a href="javascript:;">中式裙装</a></li>
+              <li><a href="javascript:;">中式大衣男</a></li>
+              <li><a href="javascript:;">中式大衣女</a></li>
             </ul>
           </div>
           <div class="suit-menu-one">
@@ -203,7 +206,9 @@
       $('.sol-top li').removeClass('on').eq(index).addClass('on')
       $('.now-crumbs').text(aboutList[index])
     })
-
+    $('.info-btn').click(function () {
+      window.location.href = 'suitInfo.html'
+    })
   </script>
 </body>
 

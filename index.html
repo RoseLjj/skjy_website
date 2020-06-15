@@ -238,48 +238,6 @@
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
   <script src="js/index.js"></script>
-  <script>
-    // 引入底部
-    $("#bottomBody").load("bottom.html?v=1.0.0", function () {
-      $("#bottom-parent").val(0);
-    });
-    $('.brand-text').eq(0).show()
-    $('.brand-bottom .brand-one').click(function () {
-      var brandList = [
-        {
-          img: 'images/img_home_brand_a@2x.png',
-          zh: '品牌释义',
-          en: 'BRAND STORY',
-          text: '北京圣凯佳悦服装有限公司 成立于2015年，是融职业装研究、设计、服务、生产和销售、于一体的专业企业，坐落在文化底蕴深厚的北京市密云区。公司主要产品包括团体男女西装、时装、商务休闲装、衬衫、T恤、文化衫、服饰、私人定制和各类工服等。'
-        },
-        {
-          img: 'images/img_home_brand_b@2x.png',
-          zh: '品牌理念与愿景',
-          en: 'BRAND STORY',
-          text: '圣凯嘉悦服饰经过不懈的努力，赢得了客户的广泛认同和信赖，我们秉承“客户第一”的经营理念，把”为客户创造价值“作为我们始终追求的目标，我们愿以执着的务实精神，为您提供优质的产品和体贴的服务，努力为客户创造更多价值，在不断前进的道路上，做您信赖的商业合作伙伴！'
-        },
-        {
-          img: 'images/img_home_brand_c@2x.png',
-          zh: '服务与承诺',
-          en: 'GOOD SERVICE',
-          text: '我们服务于：</br>企事业单位、银行证券、工矿企业、星级酒店、餐饮业、房产物业、航空铁路、学校、商业连锁公司等。 </br>创意设计：</br>公司根据客户行业特征，企业文化，工作环境等特定因素，将服装设计，生产制作的完美理念融入到客户文化中，为企业着装进行量体定做。 </br>优质服务：</br>为客户提供设计、量体、选料、裁剪、制作到免费成衣配送，实行售前、售中、售后全面而快捷的服务。'
-        }
-      ]
-      var nowIndex = $(this).index()
-      $('.brand-bottom .brand-one').removeClass('active').eq(nowIndex).addClass('active')
-      $('.brand-title-en').text(brandList[nowIndex].en)
-      $('.brand-title-zh').text(brandList[nowIndex].zh)
-      $('.brand-top img').attr({
-        src: brandList[nowIndex].img
-      })
-      $('.brand-text').hide().eq(nowIndex).show()
-      if (nowIndex === 2) {
-        // $('.brand-nei').addClass('brand3')
-      } else {
-        // $('.brand-nei').removeClass('brand3')
-      }
-    })
-  </script>
 </body>
 
 </html>

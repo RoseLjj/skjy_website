@@ -2,36 +2,46 @@
 document.write('<script src="bootstrap/js/bootstrap.min.js"></script>'); // 引入bootstrap.js
 document.write("<script language=javascript src='js/config.js'></script>"); // 引入配置文件
 
-$(function(){
+$(function () {
   console.log('index')
+  // 引入头部
   $("#headBody").load("head.html?v=1.0.0", function () {
-    $("#get-parent").val(0);
+    $("#top-parent").val(0);
   });
-  $('.carousel').carousel()
+  // 引入底部
+  $("#bottomBody").load("bottom.html?v=1.0.0", function () {
+    $("#bottom-parent").val(0);
+  });
   // 初始化轮播
-  $(".start-slide").click(function () {
-    $("#myCarousel").carousel('cycle');
-  });
-  // 停止轮播
-  $(".pause-slide").click(function () {
-    $("#myCarousel").carousel('pause');
-  });
-  // 循环轮播到上一个项目
-  $(".prev-slide").click(function () {
-    $("#myCarousel").carousel('prev');
-  });
-  // 循环轮播到下一个项目
-  $(".next-slide").click(function () {
-    $("#myCarousel").carousel('next');
-  });
-  // 循环轮播到某个特定的帧
-  $(".slide-one").click(function () {
-    $("#myCarousel").carousel(0);
-  });
-  $(".slide-two").click(function () {
-    $("#myCarousel").carousel(1);
-  });
-  $(".slide-three").click(function () {
-    $("#myCarousel").carousel(2);
-  });
+  $('.carousel').carousel()
+  // 默认展示的品牌释义
+  $('.brand-text').eq(0).show()
+  // 品牌释义点击
+  $('.brand-bottom .brand-one').click(function () {
+    var brandList = [
+      {
+        img: 'images/img_home_brand_a@2x.png',
+        zh: '品牌释义',
+        en: 'BRAND STORY'
+      },
+      {
+        img: 'images/img_home_brand_b@2x.png',
+        zh: '品牌理念与愿景',
+        en: 'BRAND STORY'
+      },
+      {
+        img: 'images/img_home_brand_c@2x.png',
+        zh: '服务与承诺',
+        en: 'GOOD SERVICE'
+      }
+    ]
+    var nowIndex = $(this).index()
+    $('.brand-bottom .brand-one').removeClass('active').eq(nowIndex).addClass('active')
+    $('.brand-title-en').text(brandList[nowIndex].en)
+    $('.brand-title-zh').text(brandList[nowIndex].zh)
+    $('.brand-top img').attr({
+      src: brandList[nowIndex].img
+    })
+    $('.brand-text').hide().eq(nowIndex).show()
+  })
 })

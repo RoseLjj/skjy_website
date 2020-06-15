@@ -61,31 +61,92 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.SuperSlide.2.1.1.js"></script>
   <script>
-   $(function(){
-    var num = $('#top-parent').val()
-    num = parseInt(num)
-    console.log('num', num)
-    jQuery(".head-nav-content").slide({
-      type: "menu",
-      titCell: ".m",
-      targetCell: ".sub",
-      effect: "slideDown",
-      delayTime: 300,
-      triggerTime: 100,
-      defaultIndex: num,
-      returnDefault: true
-    });
-    // 导航置顶
-    $(window).scroll(function(){
-        //判断向下滑动的距离
-        if($(window).scrollTop()>=100){
-            //将顶部导航栏固定
-            $(".head-nav").addClass("fixed");
-        }else{
-            $(".head-nav").removeClass("fixed");
+    $(function () {
+      var num = $('#top-parent').val()
+      num = parseInt(num)
+      var pathname = window.location.pathname;
+      var pathList = [
+        {
+          path: '/',
+          val: 0
+        },
+        {
+          path: '/index.html',
+          val: 0
+        },
+        {
+          path: '/about.html',
+          val: 1
+        },
+        {
+          path: '/suit.html',
+          val: 2
+        },
+        {
+          path: '/suitInfo.html',
+          val: 2
+        },
+        {
+          path: '/suitList.html',
+          val: 2
+        },
+        {
+          path: '/tailor.html',
+          val: 3
+        },
+        {
+          path: '/customer.html',
+          val: 4
+        },
+        {
+          path: '/contact.html',
+          val: 5
         }
+      ]
+      $.each(pathList, function (index, item) {
+        if (pathname == item.path) {
+          num = item.val
+        }
+      })
+      console.log('num', num)
+      jQuery(".head-nav-content").slide({
+        type: "menu",
+        titCell: ".m",
+        targetCell: ".sub",
+        effect: "slideDown",
+        delayTime: 300,
+        triggerTime: 100,
+        defaultIndex: num,
+        returnDefault: true
+      });
+      // setTimeout(function () {
+      //   var num = $('#top-parent').val()
+      //   num = parseInt(num)
+      //   console.log('num', num)
+      //   jQuery(".head-nav-content").slide({
+      //     type: "menu",
+      //     titCell: ".m",
+      //     targetCell: ".sub",
+      //     effect: "slideDown",
+      //     delayTime: 300,
+      //     triggerTime: 100,
+      //     defaultIndex: num,
+      //     returnDefault: true
+      //   });
+      // }, 500)
+      // 导航置顶
+      $(window).scroll(function () {
+        //判断向下滑动的距离
+        if ($(window).scrollTop() >= 79) {
+          //将顶部导航栏固定
+          $(".head-nav").addClass("fixed");
+          $('body').css('padding-top', '86px')
+        } else {
+          $(".head-nav").removeClass("fixed");
+          $('body').css('padding-top', '0px')
+        }
+      })
     })
-   })
   </script>
 </body>
 

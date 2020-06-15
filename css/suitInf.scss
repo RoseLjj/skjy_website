@@ -1,5 +1,6 @@
 @import "global.scss";
 body{
+  width: 100%;
   background-color: #fff !important;
 }
 // 详情
@@ -144,6 +145,12 @@ body{
 }
 
 // ---------- 列表页
+.suit-banner{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
 .list-container{
   padding-bottom: 134px;
   .suit-content{
@@ -151,7 +158,6 @@ body{
     border-bottom: 1px solid $color-100;
     margin-bottom: 20px;
   }
-  
 }
 // 分页
 .suit-pagination{
@@ -222,8 +228,9 @@ body{
           text-decoration: none;
           color: $color-50;
           &:hover{
-            text-decoration: none;
-            color: $color-50;
+            color:#E84A58;
+            border-bottom: 1px solid #E84A58;
+            padding-bottom: 5px;
           }
         }
       }

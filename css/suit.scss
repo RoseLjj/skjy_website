@@ -47,7 +47,7 @@
     width: 1820px;
     height: 700px;
     margin: 0 auto;
-    margin-bottom: 112px;
+    margin-bottom: 50px;
     .item{
       height: 100%;
       text-align: center;
@@ -73,5 +73,357 @@
   margin-bottom: 60px;
   .sk-btn{
     text-align: center;
+  }
+}
+
+// 职业装定制
+.bussiness-ding{
+  text-align: center;
+  .buss-title{
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  .buss-des{
+    font-size: 17px;
+    color: $color-65;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  .buss-list{
+    img{
+      width: 227px;
+    }
+  }
+}
+
+// 定制流程
+.suit-process{
+  margin-top: 71px;
+  width: 100%;
+  min-width: 1246px;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 57px;
+  padding-bottom: 76px;
+  .suit-process-title{
+    font-size: 18px;
+  }
+  .suit-process-des{
+    font-size: 17px;
+    margin-bottom: 40px;
+    color: $color-65;
+  }
+  .suit-process-img{
+    img{
+      width: 914px;
+    }
+  }
+  .suit-process-text{
+    margin-top: 68px;
+    font-size: 13px;
+    color: $color-65;
+    letter-spacing: 2px;
+  }
+}
+
+// 职业装展示
+.suit-show{
+  position: relative;
+  text-align: center;
+  padding-top: 85px;
+  margin: 0 auto;
+  &::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    background-image: url(../images/home_seg@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+  }
+  .home-box-title{
+    display: inline-block;
+    border-top: 1px solid #AB9779;
+    border-bottom: 1px solid #AB9779;
+    padding: 8px 0;
+    margin-bottom: 67px;
+    .home-title-en{
+      font-size: 22px;
+      color: $color-65;
+      line-height: 40px;
+    }
+    .home-title-zh{
+      font-size: 35px;
+    }
+  }
+  .suit-show-main{
+    display: flex;
+    .suit-menu{
+      width: 246px;
+      background-color: #fff;
+      flex:none;
+      .suit-menu-top{
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        background-color: $color-100;
+      }
+      .suit-main{
+        background-color: #f4f4f4;
+        padding-top: 36px;
+      }
+      .suit-menu-one{
+        padding: 0 30px;
+        margin-top: 15px;
+        &:last-of-type{
+          padding-bottom: 30px;
+        }
+        &:nth-of-type(1){
+          margin-top: 15px;
+        }
+        .suit-menu-title{
+          font-size: 15px;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+        ul{
+          text-align: left;
+          li{
+            color: $color-50;
+            display: inline-block;
+            width: 48.5%;
+            font-size: 13px;
+            text-align: left;
+            line-height: 36px;
+            cursor: pointer;
+            a{
+              text-decoration: none;
+              color: $color-50;
+              &:hover{
+                color:#E84A58;
+                border-bottom: 1px solid #E84A58;
+                padding-bottom: 5px;
+              }
+            }
+            &:hover{
+              a{
+                color:#E84A58;
+                border-bottom: 1px solid #E84A58;
+                padding-bottom: 5px;
+              }
+            }
+          }
+          .active{
+            a{
+              color:#E84A58;
+              border-bottom: 1px solid #E84A58;
+              padding-bottom: 5px;
+            }
+          }
+        }
+        .suit-menu-2{
+            li{
+              width: 23.3%;
+            }
+        }
+      }
+      .suit-contact{
+        background-color: #E2D7C4;
+        color: #030303;
+        font-size: 14px;
+        padding: 30px 0;
+        padding-left: 30px;
+        text-align: left;
+        div{
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .suit-list-main{
+      flex: 1;
+      padding-left: 28px;
+      .suit-main-box{
+        .suit-main-img{
+          width: 100%;
+          position: relative;
+          cursor: pointer;
+          margin-bottom: 30px;
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+          img{
+            width: 100%;
+          }
+          .suit-img-info{
+            width: 258px;
+            height: 123px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -129px;
+            margin-top: -61px;
+            background-color: rgba(255,255,255,.2);
+            padding: 25px 0;
+            padding-left: 47px;
+            box-sizing: border-box;
+            .suit-info-center{
+              border-left: 2px solid $color-100;
+              padding-left: 10px;
+              text-align: left;
+              .suit-info-zh{
+                font-size: 28px;
+                letter-spacing: 3px;
+              }
+              .suit-info-en{
+                font-size: 22px;
+                color: $color-45;
+              }
+            }
+          }
+          .suit-img-info-2{
+            background-color: rgba(0,0,0,.2);
+            .suit-info-center{
+              border-color: #fff;
+              .suit-info-zh{
+                color: #fff;
+              }
+              .suit-info-en{
+                color: rgba(255,255,255,.45);
+              }
+            }
+          }
+          .suit-img-info-3{
+            .suit-info-center{
+              .suit-info-en{
+                color: rgba(255,255,255,1);
+              }
+            }
+          }
+        }
+      }
+      .suit-main-left{
+        width: 527px;
+        display: inline-block;
+      }
+      .suit-main-right{
+        margin-left: 30px;
+        width: 413px;
+        display: inline-block;
+      }
+    }
+  }
+}
+// 优势
+.sk-advantage{
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-top: 88px;
+  padding-top: 61px;
+  padding-bottom: 91px;
+  position: relative;
+  &::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    background-image: url(../images/home_seg@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+  }
+  .sk-advantage-title{
+    padding: 0 40px;
+    border-bottom: 1px solid $color-100;
+    display: inline-block;
+    padding-bottom: 16px;
+    .sk-adv-en{
+      font-size: 22px;
+      color: #C7A46F;
+    }
+    .sk-adv-zh{
+      font-size: 40px;
+    }
+  }
+  .sk-adv-main{
+    text-align: center;
+    margin-top: 56px;
+    .sk-main-one{
+      line-height: 88px;
+      &>div{
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .sk-main-line{
+        display: inline-block;
+        width: 146px;
+        height: 0;
+        border-top: 3px dotted $color-100;
+        position: relative;
+        top: -4px;
+      }
+      .sk-main-left{
+        width: 450px;
+        text-align: right;
+        span{
+          font-size: 21px;
+          margin-left: 30px;
+        }
+      }
+      .sk-main-left-2{
+        &>div{
+          line-height: 44px;
+          &:nth-of-type(1){
+            font-size: 17px;
+          }
+          &:nth-of-type(2){
+            font-size: 13px;
+            color: $color-65;
+            line-height: 30px;
+          }
+        }
+      }
+      .sk-main-center{
+        width: 215px;
+        margin: 0 22px;
+        div{
+          line-height: 12px;
+          font-size: 12px;
+          color: #DBB273;
+          position: relative;
+          top: -4px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .sk-main-right{
+        width: 450px;
+        text-align: left;
+        span{
+          color: #C7A46F;
+          font-size: 21px;
+          margin-right: 30px;
+        }
+      }
+      .sk-main-right-2{
+        &>div{
+          line-height: 44px;
+          &:nth-of-type(1){
+            font-size: 17px;
+            color: #C7A46F;
+          }
+          &:nth-of-type(2){
+            font-size: 13px;
+            line-height: 30px;
+            color: $color-65
+          }
+        }
+      }
+    }
   }
 }

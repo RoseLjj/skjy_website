@@ -16,80 +16,83 @@
 
 <body>
   <div class="sk-head" id="headBody"></div>
-  <!-- 面包屑 -->
-  <div class="sk-crumbs sk-container clearfix">
-    <ol class="fl breadcrumb">
-      <li><a href="index.html">首页</a></li>
-      <li class="now-crumbs">联系我们</li>
-    </ol>
-    <div class="fr right-crumbs">
-      <span>CONTACT US / </span>
-      <span class="now-crumbs">联系我们</span>
+  <div class="about-box">
+    <!-- 面包屑 -->
+    <div class="sk-crumbs sk-container clearfix">
+      <ol class="fl breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li class="now-crumbs">联系我们</li>
+      </ol>
+      <div class="fr right-crumbs">
+        <span>CONTACT US / </span>
+        <span class="now-crumbs">联系我们</span>
+      </div>
     </div>
-  </div>
-  <!-- 内容 -->
-  <div class="sk-container contact-container">
-    <div class="sk-container contact-content">
-      <img class="contact-logo" src="images/img_contact@2x.png" alt="">
-      <div class="contact-form row">
-        <form class="form-horizontal">
-          <div class="form-group form-group-2">
-            <label for="inputEmail3" class="control-label">联系人</label>
-            <div class="control-form-content">
-              <input type="text" class="form-control" placeholder="请输入您的姓名">
+    <!-- 内容 -->
+    <div class="sk-container contact-container">
+      <div class="sk-container contact-content">
+        <img class="contact-logo" src="images/img_contact@2x.png" alt="">
+        <div class="contact-form row">
+          <form class="form-horizontal">
+            <div class="form-group form-group-2">
+              <label for="inputEmail3" class="control-label">联系人</label>
+              <div class="control-form-content">
+                <input type="text" class="form-control" placeholder="请输入您的姓名">
+              </div>
             </div>
-          </div>
-          <div class="form-group  form-group-2">
-            <label for="inputPassword3" class="control-label">分类</label>
-            <!-- <div class="control-form-content">
+            <div class="form-group  form-group-2">
+              <label for="inputPassword3" class="control-label">分类</label>
+              <!-- <div class="control-form-content">
               <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
             </div> -->
-            <div class="dropdown control-form-content">
-              <button class="btn btn-default dropdown-toggle form-control" type="button" id="dropdownMenu1"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-num="1">
-                <span>团体定制</span>
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li data-num="1"><a>团体定制</a></li>
-                <li data-num="2"><a>私人定制</a></li>
-              </ul>
+              <div class="dropdown control-form-content">
+                <button class="btn btn-default dropdown-toggle form-control" type="button" id="dropdownMenu1"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-num="1">
+                  <span>团体定制</span>
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li data-num="1"><a>团体定制</a></li>
+                  <li data-num="2"><a>私人定制</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="form-group form-group-2">
-            <label for="inputEmail3" class="control-label">联系电话</label>
-            <div class="control-form-content">
-              <input type="text" class="form-control" id="inputEmail3" placeholder="请输入您的联系电话">
+            <div class="form-group form-group-2">
+              <label for="inputEmail3" class="control-label">联系电话</label>
+              <div class="control-form-content">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="请输入您的联系电话">
+              </div>
             </div>
-          </div>
-          <div class="form-group form-group-2">
-            <label for="inputPassword3" class="control-label">主题描述</label>
-            <div class="control-form-content">
-              <input type="text" class="form-control" id="inputPassword3" placeholder="请添加描述...">
+            <div class="form-group form-group-2">
+              <label for="inputPassword3" class="control-label">主题描述</label>
+              <div class="control-form-content">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="请添加描述...">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="inputEmail3" class="control-label">留言</label>
-            <div class="control-form-content">
-              <textarea class="form-control form-control2" placeholder="请输入您的留言" name="" id="" cols="30" rows="10"
-                value=""></textarea>
+            <div class="form-group">
+              <label for="inputEmail3" class="control-label">留言</label>
+              <div class="control-form-content">
+                <textarea class="form-control form-control2" placeholder="请输入您的留言" name="" id="" cols="30" rows="10"
+                  value=""></textarea>
+              </div>
             </div>
+            <div class="form-group form-btn">
+              <button type="button" id="submit-btn" data-toggle="modal" data-target="#myModal">提交
+                >></button>
+            </div>
+          </form>
+          <div class="contact-info">
+            <div>联系电话： 010-61276688</div>
+            <div>客服电话： 400-010-8816</div>
+            <div>地址：北京市密云区溪翁庄镇</div>
           </div>
-          <div class="form-group form-btn">
-            <button type="submit" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">提交
-              >></button>
-          </div>
-        </form>
-        <div class="contact-info">
-          <div>联系电话： 010-61276688</div>
-          <div>客服电话： 400-010-8816</div>
-          <div>地址：北京市密云区溪翁庄镇</div>
         </div>
       </div>
     </div>
   </div>
   <!-- 提交弹框 -->
-  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-title">是否提交信息。</div>
@@ -124,6 +127,7 @@
         $('.success-tips').fadeOut()
       }, 3000)
     })
+
   </script>
 </body>
 

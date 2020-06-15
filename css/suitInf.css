@@ -283,6 +283,15 @@ body {
   margin-left: -14px;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
 .sk-bottom .sk-bottom-top {
   height: 52px;
   line-height: 52px;
@@ -377,6 +386,7 @@ body {
 }
 
 body {
+  width: 100%;
   background-color: #fff !important;
 }
 
@@ -540,6 +550,14 @@ body {
   width: 100%;
 }
 
+.suit-banner {
+  width: 100%;
+}
+
+.suit-banner img {
+  width: 100%;
+}
+
 .list-container {
   padding-bottom: 134px;
 }
@@ -634,8 +652,9 @@ body {
 }
 
 .suit-menu .suit-menu-one ul li a:hover {
-  text-decoration: none;
-  color: rgba(4, 0, 0, 0.5);
+  color: #E84A58;
+  border-bottom: 1px solid #E84A58;
+  padding-bottom: 5px;
 }
 
 .suit-menu .suit-menu-one ul .active a {

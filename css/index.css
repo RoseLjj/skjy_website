@@ -209,6 +209,7 @@ body {
   text-align: center;
   height: 86px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .head-nav .head-nav-content {
@@ -281,6 +282,15 @@ body {
   top: 0px;
   left: 50%;
   margin-left: -14px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1) !important;
 }
 
 .sk-bottom .sk-bottom-top {
@@ -372,6 +382,11 @@ body {
   color: white;
 }
 
+.about-box {
+  background-image: url(../images/contact_bg@2x.png);
+  background-size: contain;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /*兼容IE11*/
 }
@@ -385,7 +400,8 @@ body {
 }
 
 .home-container .carousel {
-  width: 1820px;
+  max-width: 1820px;
+  width: 100%;
   height: 700px;
   margin: 0 auto;
   margin-bottom: 112px;
@@ -394,6 +410,11 @@ body {
 .home-container .carousel .item {
   height: 100%;
   text-align: center;
+  width: 100%;
+}
+
+.home-container .carousel .item img {
+  width: 100%;
 }
 
 .home-container .carousel .carousel-indicators {
