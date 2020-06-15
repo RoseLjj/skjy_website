@@ -125,6 +125,12 @@ body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, f
       *zoom: 1;
   }
 
+  .fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
+
   // 按钮
   .sk-btn{
     margin-top: 60px;
