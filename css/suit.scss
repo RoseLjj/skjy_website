@@ -1,0 +1,77 @@
+@import "global.scss";
+.head-nav{
+  box-shadow: none !important;
+}
+
+// 头部
+.home-box-head{
+  width: 1380px;
+  margin: 0 auto;
+  position: relative;
+  .home-box-title{
+    margin-top: 62px;
+    text-align: center;
+    .home-title-zh{
+      font-size: 58px;
+      line-height: 70px;
+    }
+    .home-title-en{
+      font-size: 28px;
+      line-height: 37px;
+      position: relative;
+      span{
+        display: inline-block;
+        padding: 10px 68px 41px 68px;
+        border-bottom: 1px solid $color-100;
+      }
+    }
+  }
+  .home-box-content{
+  }
+}
+.home-box-head-2{
+  &::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    background-image: url(../images/home_seg@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+  }
+}
+.suit-home-container{
+  .carousel{
+    width: 1820px;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 112px;
+    .item{
+      height: 100%;
+      text-align: center;
+    }
+    .carousel-indicators{
+      bottom: 40px;
+      li{
+        width:109px;
+        height:9px;
+        background:rgba(255,255,255,1);
+        opacity:0.5;
+        border-radius: 0;
+        margin: 0 6px;
+      }
+      .active{
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+.suit-customer{
+  margin-bottom: 60px;
+  .sk-btn{
+    text-align: center;
+  }
+}

@@ -1,6 +1,279 @@
-.carousel{
-  .item{
-    height: 300px;
+@import "global.scss";
+.head-nav{
+  box-shadow: none !important;
+}
+.home-container{
+  padding-bottom: 72px;
+  // 轮播
+  .carousel{
+    width: 1820px;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 112px;
+    .item{
+      height: 100%;
+      text-align: center;
+    }
+    .carousel-indicators{
+      bottom: 40px;
+      li{
+        width:109px;
+        height:9px;
+        background:rgba(255,255,255,1);
+        opacity:0.5;
+        border-radius: 0;
+        margin: 0 6px;
+      }
+      .active{
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.home-box{
+  margin-bottom: 20px;
+  .brand-top{
+    margin-bottom: 43px;
+    .fl{
+      img{
+        width: 780px;
+      }
+    }
+    .fr{
+      width: 400px;
+      .brand-title-en{
+        text-align: right;
+        font-size: 54px;
+      }
+      .brand-title-zh{
+        text-align: right;
+        font-size: 28px;
+      }
+      .brand-line{
+        width: 250px;
+        height: 1px;
+        background-color: $color-100;
+        margin-top: 60px;
+        margin-bottom: 45px;
+      }
+      .brand-text{
+        line-height: 26px;
+        font-size: 14px;
+        text-indent: 2em;
+        letter-spacing: 2px;
+        display: none;
+      }
+      .brand-text3{
+        display: none;
+      }
+    }
+    .sk-btn{
+      text-align: right;
+    }
+    .brand3{
+      .brand-line{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .sk-btn{
+        margin-top: 50px;
+        text-align: right;
+      }
+    }
+  }
+  .brand-bottom{
+    .brand-one{
+      margin-right: 19px;
+      display: inline-block;
+      width: 32%;
+      position: relative;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      img{
+        width: 100%;
+      }
+      .brand-one-info{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 110px;
+        top: 0;
+        left: 0;
+        background-color: $color-65;
+        cursor: pointer;
+        .brand-ont-title-en{
+          font-size: 20px;
+          letter-spacing: 2px;
+          color: #fff;
+        }
+        .brand-ont-title-zh{
+          font-size: 14px;
+          color: #fff;
+          opacity: 0.65;
+        }
+      }
+    }
+    .active{
+      .brand-one-info{
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// 头部
+.home-box-head{
+  width: 1380px;
+  margin: 0 auto;
+  border-top: 1px solid #BCBCBC;
+  position: relative;
+  
+  &::before{
+    content: "";
+    width: 75px;
+    height: 30px;
+    background-image: url(../images/home_seg@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -37px;
+  }
+  .home-box-title{
+    margin-top: 62px;
+    text-align: center;
+    .home-title-zh{
+      font-size: 58px;
+      line-height: 70px;
+    }
+    .home-title-en{
+      font-size: 28px;
+      line-height: 37px;
+      position: relative;
+      span{
+        display: inline-block;
+        padding: 10px 68px 41px 68px;
+        border-bottom: 1px solid $color-100;
+      }
+    }
+  }
+  .home-box-content{
+  }
+}
+
+// 私人定制
+.home-business{
+  margin-top: 80px;
+ .home-box-content{
+   margin-top: 44px;
+    .business-img-big{
+      width: 100%;
+    }
+  }
+  .tailor-img-list{
+    margin-top: 44px;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #F4F4F4;
+    .tailor-one{
+      float: left;
+      width: 24.8%;
+      padding: 0 25px;
+      .tailor-img-one{
+        padding: 15px;
+        background-color: #fff;
+      }
+      img{
+        width: 100%;
+      }
+      .tailor-img-title{
+        color: #AB9779;
+        font-size: 18px;
+        line-height: 50px;
+      }
+      .tailor-img-text{
+        font-size: 14px;
+      }
+    }
+  }
+  .sk-btn{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.home-customer{
+  .sk-btn{
+    text-align: center;
+  }
+  .customer-img{
+    margin-top: 10px;
+    color:$color-65;
+    text-align: center;
+    padding-right: 100px;
+    img{
+      width: 130px;
+      height: 130px;
+    }
+  }
+}
+
+// 职业装定制
+.home-suit{
+  margin-top: 100px;
+  .home-box-title{
+    margin-bottom: 50px;
+    .home-title-zh{
+      font-size: 39px;
+    }
+    .home-title-en{
+      font-size: 22px;
+    }
+  }
+  .suit-img-list{
+
+    .suit-one{
+      display: inline-block;
+      width: 48%;
+      &:nth-of-type(1),&:nth-of-type(2){
+        margin-bottom: 77px;
+      }
+      &:nth-of-type(2n+1){
+        margin-right: 42px;
+      }
+      .suit-title{
+        border-left: 2px solid $color-100;
+        padding-left: 13px;
+        margin-bottom: 30px;
+        .suit-title-zh{
+          font-size: 28px;
+          letter-spacing: 2px;
+        }
+        .suit-title-en{
+          font-size: 22px;
+          color:$color-45;
+        }
+      }
+      .suit-img{
+        img{
+          width: 100%;
+        }
+      }
+      .suit-more{
+        text-align: right;
+        a{
+          color: $color-45;
+          font-size: 16px;
+          line-height: 30px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .sk-btn{
     text-align: center;
   }
 }

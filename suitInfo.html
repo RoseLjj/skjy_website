@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品详情</title>
+  <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/suitInf.min.css">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="sk-head" id="headBody"></div>
+  <!-- 面包屑 -->
+  <div class="sk-crumbs sk-container clearfix">
+    <ol class="fl breadcrumb">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="about.html">职业装定制</a></li>
+      <li><a href="about.html">男商务西服</a></li>
+      <li class="now-crumbs">藏蓝色 100%毛商务西服套装</li>
+    </ol>
+    <div class="fr right-crumbs">
+      <span>货号/</span>
+      <span class="now-crumbs">SKNXZ001</span>
+    </div>
+  </div>
+  <!-- 内容 -->
+  <div class="sk-container info-container">
+    <div class="suit-content">
+      <div class="suit-one clearfix">
+        <div class="fl suit-one-img">
+          <img src="images/img_detail_Small@2x.png" alt="">
+        </div>
+        <div class="fr suit-one-right">
+          <div class="suit-type">男商务西服套装</div>
+          <div class="suit-name clearfix">
+            <div class="fl suit-name-l">
+              藏蓝色 100% 毛商务西服套装
+            </div>
+            <div class="fr suit-name-r">
+              货号：<span>PMTZ2003</span>
+            </div>
+          </div>
+          <div class="suit-details">
+            <div class="suit-details-title">产品基本信息</div>
+            <div class="suit-details-main">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">材质：<span>100% 羊毛</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">图案：<span>条纹</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">领型：<span>平驳领门襟</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">纽扣：<span>两粒 单排扣</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">颜色：<span>藏青色</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">风格：<span>商务绅士</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">厚薄：<span>常规适用</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">开衩：<span>双开衩</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">版型：<span>欧版收身</span></div>
+              </div>
+            </div>
+            <div class="suit-phone">
+              <div class="suit-phone-btn">电话预约量体定制</div>
+              <div class="suit-phone-num clearfix">
+                <span>010-89088108</span>
+                <span>010-89088915</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="suit-recommend">
+        <div class="suit-re-title">
+          <div class="suit-title-text">
+            <div class="suit-title-text-zh">同类商品推荐</div>
+            <div class="suit-title-text-en">PRODUCTS</div>
+          </div>
+        </div>
+        <div class="suit-more-list">
+          <div class="suit-list-one"> <img src="images/img_detail_Small@2x.png" alt=""></div>
+          <div class="suit-list-one"> <img src="images/img_detail_Small@2x.png" alt=""></div>
+          <div class="suit-list-one"> <img src="images/img_detail_Small@2x.png" alt=""></div>
+          <div class="suit-list-one"> <img src="images/img_detail_Small@2x.png" alt=""></div>
+          <div class="suit-list-one"> <img src="images/img_detail_Small@2x.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sk-bottom" id="bottomBody"></div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    // 引入头部
+    $("#headBody").load("head.html?v=1.0.0", function () {
+      $("#top-parent").val(1);
+    });
+    // 引入底部
+    $("#bottomBody").load("bottom.html?v=1.0.0", function () {
+      $("#bottom-parent").val(1);
+    });
+    $('.sol-top li').click(function (e) {
+      console.log(e.target)
+      console.log($(this).index())
+      var index = $(this).index()
+      $('.bd .bd-c').slideUp().eq(index).slideDown()
+      $('.sol-top li').removeClass('on').eq(index).addClass('on')
+      $('.now-crumbs').text(aboutList[index])
+    })
+
+  </script>
+</body>
+
+</html>

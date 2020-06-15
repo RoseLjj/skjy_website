@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/global.min.css?v=1.0.0">
-   <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-  <input type="hidden" id="get-parent" />
-  底部
+  <input type="hidden" id="bottom-parent" />
+  <div class="sk-bottom">
+    <div class="sk-bottom-top">
+      <ul>
+        <li>
+          <img src="images/icon_chi@2x.png" alt="">
+          <span>上门量体</span>
+        </li>
+        <li>
+          <img src="images/icon_shouhou@2x.png" alt="">
+          <span>无忧售后</span>
+        </li>
+        <li>
+          <img src="images/icon_fahuo@2x.png" alt="">
+          <span>快速发货</span>
+        </li>
+        <li>
+          <img src="images/icon_zhiliang@2x.png" alt="">
+          <span>质量保证</span>
+        </li>
+      </ul>
+    </div>
+    <div class="sk-bottom-2">
+      <div class="sk-bottom-content clearfix">
+        <ul class="fl">
+          <li><a href="/">首页</a></li>
+          <li><a href="about.html">关于品牌</a></li>
+          <li><a href="suit.html">职业装定制</a></li>
+          <li><a href="tailor.html">私人定制</a></li>
+          <li><a href="customer.html">品牌客户</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <div class="go-back-top" id="goback">
+          返回顶部
+        </div>
+        <dl class="fr">
+          <dd>全国咨询热线</dd>
+          <dd class="font-size-30">010-89088108</dd>
+          <dd class="font-size-30">010-89088915</dd>
+          <dd class="font-size-16">北京圣凯嘉悦服装有限公司</dd>
+          <dd>地址：北京市密云区溪翁庄镇</dd>
+          <dd>手机：13910154176</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="sk-bottom-3">
+      <span>2020 北京圣凯嘉悦服装有限公司 <a href="">京 ICP 备 18008370 号 -1</a></span>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
+  <script>
+    var num_b = $('#bottom-parent').val()
+    $('#goback').click(function () {
+      $(window).scrollTop(0)
+    })
+  </script>
 </body>
+
 </html>
