@@ -75,6 +75,16 @@
       defaultIndex: num,
       returnDefault: true
     });
+    // 导航置顶
+    $(window).scroll(function(){
+        //判断向下滑动的距离
+        if($(window).scrollTop()>=100){
+            //将顶部导航栏固定
+            $(".head-nav").addClass("fixed");
+        }else{
+            $(".head-nav").removeClass("fixed");
+        }
+    })
    })
   </script>
 </body>
