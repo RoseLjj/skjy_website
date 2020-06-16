@@ -44,4 +44,12 @@ $(function () {
     })
     $('.brand-text').hide().eq(nowIndex).show()
   })
+  // 职业装
+  $('.suit-title,.suit-img').click(function () {
+    window.location.href = 'suitList.html'
+  })
+  // 私人定制图片
+  $('.business-img-big').click(function () {
+    window.location.href = "tailor.html"
+  })
 })

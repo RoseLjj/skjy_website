@@ -209,6 +209,7 @@ body {
   text-align: center;
   height: 86px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .head-nav .head-nav-content {
@@ -297,7 +298,7 @@ body {
   line-height: 52px;
   background-color: #8C8C8C;
   font-size: 17px;
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
 }
 
@@ -333,22 +334,29 @@ body {
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
+.sk-bottom .sk-bottom-2 .sk-bottom-content dl {
+  position: relative;
+  left: 20px;
+}
+
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   font-size: 13px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(2) {
   line-height: 38px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(3) {
   line-height: 40px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content .go-back-top {
@@ -373,12 +381,22 @@ body {
   background-color: #161616;
   text-align: center;
   line-height: 42px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
 .sk-bottom .sk-bottom-3 a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.sk-bottom .sk-bottom-3 a:hover {
+  text-decoration: none;
+}
+
+.about-box {
+  background-image: url(../images/contact_bg@2x.png);
+  background-size: 100% auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -588,6 +606,10 @@ body {
   text-decoration: none;
 }
 
+.suit-pagination .page-prev, .suit-pagination .page-next, .suit-pagination .page-first, .suit-pagination .page-last {
+  margin: 0 10px;
+}
+
 .suit-pagination .page-item.active {
   background-color: #040000;
   color: #fff;
@@ -598,9 +620,17 @@ body {
   display: flex;
 }
 
+.suit-content-2 {
+  display: block;
+}
+
+.info-body {
+  background-color: #f4f4f4 !important;
+}
+
 .suit-menu {
   width: 246px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   flex: none;
 }
 
@@ -611,7 +641,11 @@ body {
   color: #fff;
   font-size: 17px;
   background-color: #040000;
-  margin-bottom: 36px;
+}
+
+.suit-menu .suit-main {
+  background-color: #f4f4f4;
+  padding-top: 36px;
 }
 
 .suit-menu .suit-menu-one {
@@ -695,7 +729,8 @@ body {
 }
 
 .suit-list-main .suit-list-one img {
-  width: 100%;
+  width: 305px;
+  height: 356px;
 }
 
 .suit-list-main .suit-list-one .suit-list-info {

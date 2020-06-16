@@ -313,7 +313,7 @@ body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, f
     line-height: 52px;
     background-color: #8C8C8C;
     font-size: $font-size-17;
-    color: $color-fff;
+    color: rgba(255,255,255,.65);
     text-align: center;
     ul{
       display: inline-block;
@@ -340,21 +340,25 @@ body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, f
         li{
           line-height: 32px;
           a{
-            color: $color-fff;
+            color: rgba(255,255,255,.65);
             text-decoration: none;
           }
         }
       }
       dl{
+        position: relative;
+        left: 20px;
         dd{
-          color: $color-fff;
+          color: rgba(255,255,255,.65);
           font-size: $font-size-13;
-          line-height: 26px;
+          line-height: 28px;
           &:nth-of-type(2){
             line-height: 38px;
+            color: #fff;
           }
           &:nth-of-type(3){
             line-height: 40px;
+            color: #fff;
           }
         }
       }
@@ -381,10 +385,14 @@ body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, f
     background-color: #161616;
     text-align: center;
     line-height: 42px;
-    color: $color-fff;
+    color: rgba(255,255,255,.5);
     font-size: $font-size-12;
     a{
-      color: $color-fff;
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 }

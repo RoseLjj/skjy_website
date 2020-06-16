@@ -298,7 +298,7 @@ body {
   line-height: 52px;
   background-color: #8C8C8C;
   font-size: 17px;
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
 }
 
@@ -334,22 +334,29 @@ body {
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
+.sk-bottom .sk-bottom-2 .sk-bottom-content dl {
+  position: relative;
+  left: 20px;
+}
+
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   font-size: 13px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(2) {
   line-height: 38px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(3) {
   line-height: 40px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content .go-back-top {
@@ -374,21 +381,30 @@ body {
   background-color: #161616;
   text-align: center;
   line-height: 42px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
 .sk-bottom .sk-bottom-3 a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.sk-bottom .sk-bottom-3 a:hover {
+  text-decoration: none;
 }
 
 .about-box {
   background-image: url(../images/contact_bg@2x.png);
-  background-size: contain;
+  background-size: 100% auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /*兼容IE11*/
+}
+
+body {
+  min-width: 1380px;
 }
 
 .head-nav {
@@ -402,7 +418,6 @@ body {
 .home-container .carousel {
   max-width: 1820px;
   width: 100%;
-  height: 700px;
   margin: 0 auto;
   margin-bottom: 112px;
 }
@@ -614,9 +629,10 @@ body {
 }
 
 .home-business .tailor-img-list .tailor-one .tailor-img-title {
-  color: #AB9779;
+  color: #DBB273;
   font-size: 18px;
   line-height: 50px;
+  font-weight: bold;
 }
 
 .home-business .tailor-img-list .tailor-one .tailor-img-text {
@@ -636,12 +652,22 @@ body {
   margin-top: 10px;
   color: rgba(4, 0, 0, 0.65);
   text-align: center;
-  padding-right: 100px;
+  font-size: 20px;
+}
+
+.home-customer .customer-img > div {
+  width: 180px;
+  float: left;
+  margin-right: 33px;
+}
+
+.home-customer .customer-img > div:last-of-type {
+  margin-right: 0;
 }
 
 .home-customer .customer-img img {
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
 }
 
 .home-suit {

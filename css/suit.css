@@ -209,6 +209,7 @@ body {
   text-align: center;
   height: 86px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .head-nav .head-nav-content {
@@ -297,7 +298,7 @@ body {
   line-height: 52px;
   background-color: #8C8C8C;
   font-size: 17px;
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
 }
 
@@ -333,22 +334,29 @@ body {
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
+.sk-bottom .sk-bottom-2 .sk-bottom-content dl {
+  position: relative;
+  left: 20px;
+}
+
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   font-size: 13px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(2) {
   line-height: 38px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(3) {
   line-height: 40px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content .go-back-top {
@@ -373,12 +381,22 @@ body {
   background-color: #161616;
   text-align: center;
   line-height: 42px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
 .sk-bottom .sk-bottom-3 a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.sk-bottom .sk-bottom-3 a:hover {
+  text-decoration: none;
+}
+
+.about-box {
+  background-image: url(../images/contact_bg@2x.png);
+  background-size: 100% auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -390,7 +408,6 @@ body {
 }
 
 .home-box-head {
-  width: 1380px;
   margin: 0 auto;
   position: relative;
 }
@@ -430,8 +447,8 @@ body {
 }
 
 .suit-home-container .carousel {
-  width: 1820px;
-  height: 700px;
+  width: 100%;
+  max-width: 1820px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -490,7 +507,6 @@ body {
 .suit-process {
   margin-top: 71px;
   width: 100%;
-  min-width: 1246px;
   text-align: center;
   background-color: #f4f4f4;
   padding-top: 57px;
@@ -722,6 +738,10 @@ body {
   color: white;
 }
 
+.suit-show .suit-show-main .suit-list-main .suit-main-box .suit-main-img .suit-img-info-4 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .suit-show .suit-show-main .suit-list-main .suit-main-left {
   width: 527px;
   display: inline-block;
@@ -755,7 +775,7 @@ body {
 }
 
 .sk-advantage .sk-advantage-title {
-  padding: 0 40px;
+  padding: 0 80px;
   border-bottom: 1px solid #040000;
   display: inline-block;
   padding-bottom: 16px;
@@ -858,4 +878,34 @@ body {
   font-size: 13px;
   line-height: 30px;
   color: rgba(4, 0, 0, 0.65);
+}
+
+.suit-customer {
+  text-align: center;
+}
+
+.suit-customer .sk-btn {
+  text-align: center;
+}
+
+.suit-customer .customer-img {
+  margin-top: 10px;
+  color: rgba(4, 0, 0, 0.65);
+  text-align: center;
+  font-size: 20px;
+}
+
+.suit-customer .customer-img > div {
+  width: 180px;
+  float: left;
+  margin-right: 33px;
+}
+
+.suit-customer .customer-img > div:last-of-type {
+  margin-right: 0;
+}
+
+.suit-customer .customer-img img {
+  width: 180px;
+  height: 180px;
 }

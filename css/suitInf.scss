@@ -178,6 +178,9 @@ body{
       text-decoration: none;
     }
   }
+  .page-prev,.page-next, .page-first, .page-last{
+    margin: 0 10px;
+  }
   .page-item.active{
     background-color: $color-100;
     color: #fff;
@@ -188,9 +191,15 @@ body{
   // padding-left: 250px;
   display: flex;
 }
+.suit-content-2{
+  display: block;
+}
+.info-body{
+  background-color: #f4f4f4 !important;
+}
 .suit-menu{
   width: 246px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   flex:none;
   .suit-menu-top{
     height: 45px;
@@ -199,7 +208,10 @@ body{
     color: #fff;
     font-size: 17px;
     background-color: $color-100;
-    margin-bottom: 36px;
+  }
+  .suit-main{
+    background-color: #f4f4f4;
+    padding-top: 36px;
   }
   .suit-menu-one{
     padding: 0 30px;
@@ -274,7 +286,8 @@ body{
     background-color: #fff;
     margin-bottom: 25px;
     img{
-      width: 100%;
+      width: 305px;
+      height: 356px;
     }
     .suit-list-info{
       margin-top: 20px;
