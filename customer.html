@@ -140,14 +140,16 @@
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
   <script>
-    // 引入头部
-    $("#headBody").load("head.html?v=1.0.0", function () {
-      $("#top-parent").val(4);
-    });
-    // 引入底部
-    $("#bottomBody").load("bottom.html?v=1.0.0", function () {
-      $("#bottom-parent").val(4);
-    });
+    $(function () {
+      // 引入头部
+      $("#headBody").load("head.html?v=1.0.0", function () {
+        $("#top-parent").val(4);
+      });
+      // 引入底部
+      $("#bottomBody").load("bottom.html?v=1.0.0", function () {
+        $("#bottom-parent").val(4);
+      });
+    })
   </script>
 </body>
 

@@ -80,23 +80,25 @@
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
   <script>
-    // 引入头部
-    $("#headBody").load("head.html?v=1.0.0", function () {
-      $("#top-parent").val(1);
-    });
-    // 引入底部
-    $("#bottomBody").load("bottom.html?v=1.0.0", function () {
-      $("#bottom-parent").val(1);
-    });
-    var aboutList = ['品牌释义', '理念与愿景', '服务与承诺'];
-    $('.now-crumbs').text(aboutList[0])
-    $('.sol-top li').click(function (e) {
-      console.log(e.target)
-      console.log($(this).index())
-      var index = $(this).index()
-      $('.bd .bd-c').slideUp().eq(index).slideDown()
-      $('.sol-top li').removeClass('on').eq(index).addClass('on')
-      $('.now-crumbs').text(aboutList[index])
+    $(function () {
+      // 引入头部
+      $("#headBody").load("head.html?v=1.0.0", function () {
+        $("#top-parent").val(1);
+      });
+      // 引入底部
+      $("#bottomBody").load("bottom.html?v=1.0.0", function () {
+        $("#bottom-parent").val(1);
+      });
+      var aboutList = ['品牌释义', '理念与愿景', '服务与承诺'];
+      $('.now-crumbs').text(aboutList[0])
+      $('.sol-top li').click(function (e) {
+        console.log(e.target)
+        console.log($(this).index())
+        var index = $(this).index()
+        $('.bd .bd-c').slideUp().eq(index).slideDown()
+        $('.sol-top li').removeClass('on').eq(index).addClass('on')
+        $('.now-crumbs').text(aboutList[index])
+      })
     })
 
   </script>
