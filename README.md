@@ -1,1 +1,9 @@
 # skjy_website
+index.html   首页
+about.html   关于品牌
+suit.html    职业装定制首页
+suitList.html    职业装定制列表
+suitInfo.html    职业装定制详情
+tailor.html    私人定制
+customer.html    品牌客户
+contact.html    联系我们
