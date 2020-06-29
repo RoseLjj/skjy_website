@@ -396,7 +396,7 @@ body {
 
 .about-box {
   background-image: url(../images/contact_bg@2x.png);
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -494,7 +494,7 @@ body {
 }
 
 .bussiness-ding .buss-des {
-  font-size: 17px;
+  font-size: 16px;
   color: rgba(4, 0, 0, 0.65);
   line-height: 30px;
   margin-bottom: 60px;
@@ -509,12 +509,13 @@ body {
   width: 100%;
   text-align: center;
   background-color: #f4f4f4;
-  padding-top: 57px;
-  padding-bottom: 76px;
+  padding-top: 55px;
+  padding-bottom: 64px;
 }
 
 .suit-process .suit-process-title {
   font-size: 18px;
+  margin-bottom: 16px;
 }
 
 .suit-process .suit-process-des {
@@ -565,6 +566,7 @@ body {
   font-size: 22px;
   color: rgba(4, 0, 0, 0.65);
   line-height: 40px;
+  font-weight: 200;
 }
 
 .suit-show .home-box-title .home-title-zh {
@@ -612,6 +614,7 @@ body {
   font-size: 15px;
   text-align: left;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .suit-show .suit-show-main .suit-menu .suit-menu-one ul {
@@ -711,11 +714,13 @@ body {
 .suit-show .suit-show-main .suit-list-main .suit-main-box .suit-main-img .suit-img-info .suit-info-center .suit-info-zh {
   font-size: 28px;
   letter-spacing: 3px;
+  font-weight: 200;
 }
 
 .suit-show .suit-show-main .suit-list-main .suit-main-box .suit-main-img .suit-img-info .suit-info-center .suit-info-en {
   font-size: 22px;
   color: rgba(4, 0, 0, 0.45);
+  font-weight: 200;
 }
 
 .suit-show .suit-show-main .suit-list-main .suit-main-box .suit-main-img .suit-img-info-2 {
@@ -788,6 +793,7 @@ body {
 
 .sk-advantage .sk-advantage-title .sk-adv-zh {
   font-size: 40px;
+  font-weight: 200;
 }
 
 .sk-advantage .sk-adv-main {
@@ -865,6 +871,14 @@ body {
   margin-right: 30px;
 }
 
+.sk-advantage .sk-adv-main .sk-main-one .sk-main-right span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.sk-advantage .sk-adv-main .sk-main-one .sk-main-right > div:nth-of-type(1) {
+  font-weight: bold;
+}
+
 .sk-advantage .sk-adv-main .sk-main-one .sk-main-right-2 > div {
   line-height: 44px;
 }
@@ -886,6 +900,10 @@ body {
 
 .suit-customer .sk-btn {
   text-align: center;
+}
+
+.suit-customer .home-title-en {
+  font-weight: 200;
 }
 
 .suit-customer .customer-img {

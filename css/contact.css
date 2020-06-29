@@ -298,7 +298,7 @@ body {
   line-height: 52px;
   background-color: #8C8C8C;
   font-size: 17px;
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
 }
 
@@ -334,22 +334,29 @@ body {
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content ul li a {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
 }
 
+.sk-bottom .sk-bottom-2 .sk-bottom-content dl {
+  position: relative;
+  left: 20px;
+}
+
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd {
-  color: white;
+  color: rgba(255, 255, 255, 0.65);
   font-size: 13px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(2) {
   line-height: 38px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content dl dd:nth-of-type(3) {
   line-height: 40px;
+  color: #fff;
 }
 
 .sk-bottom .sk-bottom-2 .sk-bottom-content .go-back-top {
@@ -374,12 +381,22 @@ body {
   background-color: #161616;
   text-align: center;
   line-height: 42px;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
 .sk-bottom .sk-bottom-3 a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.sk-bottom .sk-bottom-3 a:hover {
+  text-decoration: none;
+}
+
+.about-box {
+  background-image: url(../images/contact_bg@2x.png);
+  background-size: 100% auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -421,22 +438,64 @@ body {
 
 .contact-container .contact-content .contact-form .form-group {
   position: relative;
-  padding-left: 100px;
-  padding-right: 45px;
+  padding-left: 80px;
+  padding-right: 39px;
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 40px;
 }
 
+.contact-container .contact-content .contact-form .form-group:nth-of-type(2) {
+  padding-left: 87px;
+}
+
+.contact-container .contact-content .contact-form .form-group:nth-of-type(4) {
+  padding-left: 87px;
+}
+
 .contact-container .contact-content .contact-form .form-group .control-label {
-  width: 100px;
+  width: 80px;
   position: absolute;
   top: 0;
   left: 0;
   text-align: left;
   font-size: 14px;
   font-weight: normal;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content input, .contact-container .contact-content .contact-form .form-group .control-form-content textarea {
+  border: 1px solid transparent;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content input:hover, .contact-container .contact-content .contact-form .form-group .control-form-content textarea:hover {
+  border: 1px solid #040000;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content input:focus, .contact-container .contact-content .contact-form .form-group .control-form-content textarea:focus {
+  border: 1px solid #040000;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content input {
+  width: 222px;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content textarea {
+  width: 582px;
+  height: 198px;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content .btn-default {
+  border: none;
+  width: 222px;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content .btn-default:focus {
+  border: none;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content .btn-default:active {
+  border: none;
 }
 
 .contact-container .contact-content .contact-form .form-group .control-form-content .form-control {
@@ -450,6 +509,11 @@ body {
 
 .contact-container .contact-content .contact-form .form-group .control-form-content .form-control2 {
   height: auto;
+}
+
+.contact-container .contact-content .contact-form .form-group .control-form-content-2 {
+  width: 584px;
+  height: 200px;
 }
 
 .contact-container .contact-content .contact-form .form-group-2 {
@@ -508,7 +572,7 @@ body {
   text-align: center;
   margin-top: 70px;
   color: rgba(4, 0, 0, 0.65);
-  line-height: 19px;
+  line-height: 26px;
 }
 
 .modal .modal-dialog {

@@ -20,17 +20,17 @@ $(function () {
   $('.brand-bottom .brand-one').click(function () {
     var brandList = [
       {
-        img: 'images/img_home_brand_a@2x.png',
+        img: 'images/img_home_brand@2x.png',
         zh: '品牌释义',
         en: 'BRAND STORY'
       },
       {
-        img: 'images/img_home_brand_b@2x.png',
+        img: 'images/img_home_idea@2x.png',
         zh: '品牌理念与愿景',
         en: 'BRAND STORY'
       },
       {
-        img: 'images/img_home_brand_c@2x.png',
+        img: 'images/img_home_service@2x.png',
         zh: '服务与承诺',
         en: 'GOOD SERVICE'
       }

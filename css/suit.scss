@@ -84,7 +84,7 @@
     margin-bottom: 24px;
   }
   .buss-des{
-    font-size: 17px;
+    font-size: 16px;
     color: $color-65;
     line-height: 30px;
     margin-bottom: 60px;
@@ -103,10 +103,11 @@
   // min-width: 1246px;
   text-align: center;
   background-color: #f4f4f4;
-  padding-top: 57px;
-  padding-bottom: 76px;
+  padding-top: 55px;
+  padding-bottom: 64px;
   .suit-process-title{
     font-size: 18px;
+    margin-bottom: 16px;
   }
   .suit-process-des{
     font-size: 17px;
@@ -153,6 +154,7 @@
       font-size: 22px;
       color: $color-65;
       line-height: 40px;
+      font-weight: 200;
     }
     .home-title-zh{
       font-size: 35px;
@@ -189,6 +191,7 @@
           font-size: 15px;
           text-align: left;
           margin-bottom: 10px;
+          cursor: pointer;
         }
         ul{
           text-align: left;
@@ -277,10 +280,12 @@
               .suit-info-zh{
                 font-size: 28px;
                 letter-spacing: 3px;
+                font-weight: 200;
               }
               .suit-info-en{
                 font-size: 22px;
                 color: $color-45;
+                font-weight: 200;
               }
             }
           }
@@ -350,6 +355,7 @@
     }
     .sk-adv-zh{
       font-size: 40px;
+      font-weight: 200;
     }
   }
   .sk-adv-main{
@@ -411,6 +417,12 @@
           color: #C7A46F;
           font-size: 21px;
           margin-right: 30px;
+          &:nth-of-type(1){
+            font-weight: bold;
+          }
+        }
+        &>div:nth-of-type(1){
+          font-weight: bold;
         }
       }
       .sk-main-right-2{
@@ -435,6 +447,9 @@
   text-align: center;
   .sk-btn{
     text-align: center;
+  }
+  .home-title-en{
+    font-weight: 200;
   }
   .customer-img{
     margin-top: 10px;

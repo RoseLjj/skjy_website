@@ -50,19 +50,19 @@
             <div class="suit-details-title">产品基本信息</div>
             <div class="suit-details-main">
               <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">材质：<span>100% 羊毛</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">图案：<span>条纹</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">领型：<span>平驳领门襟</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">纽扣：<span>两粒 单排扣</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">颜色：<span>藏青色</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">风格：<span>商务绅士</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">厚薄：<span>常规适用</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">开衩：<span>双开衩</span></div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">版型：<span>欧版收身</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">材质：<span title="100% 羊毛">100% 羊毛</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">图案：<span title="条纹">条纹</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">领型：<span title="平驳领门襟">平驳领门襟</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">纽扣：<span title="两粒 单排扣">两粒 单排扣</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">颜色：<span title="藏青色">藏青色</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">风格：<span title="商务绅士">商务绅士</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">厚薄：<span title="常规适用">常规适用</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">开衩：<span title="双开衩">双开衩</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">版型：<span title="欧版收身">欧版收身</span></div>
               </div>
             </div>
             <div class="suit-phone">
-              <div class="suit-phone-btn">电话预约量体定制</div>
+              <div class="suit-phone-btn" data-toggle="modal" data-target="#suitModal">电话预约量体定制</div>
               <div class="suit-phone-num clearfix">
                 <span>010-89088108</span>
                 <span>010-89088915</span>
@@ -88,8 +88,27 @@
       </div>
     </div>
   </div>
+  <!-- 提交弹框 -->
+  <div class="modal fade bs-example-modal-lg" id="suitModal" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-title">电话拨打</div>
+        <div class="modal-info">
+          <span>010-89088108</span>
+          <span>010-89088915</span>
+        </div>
+        <div class="modal-tip">预约量体定制</div>
+        <div class="modal-btn">
+          <button type="button" data-dismiss="modal">取消</button>
+          <button type="button"><a href="tel://010-89088108">确定</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script>
     // 引入头部
     $("#headBody").load("head.html?v=1.0.0", function () {
@@ -108,6 +127,13 @@
       $('.now-crumbs').text(aboutList[index])
     })
 
+    $('.suit-menu-title').click(function () {
+      window.location.href = "suitList.html"
+    })
+    // 推荐
+    $('.suit-list-one img').click(function () {
+      window.location.href = "suitInfo.html"
+    })
   </script>
 </body>
 

@@ -125,12 +125,6 @@
             </div>
             <div class="suit-menu-one">
               <div class="suit-menu-title">西装配饰</div>
-              <ul>
-                <!-- <li><a href="javascript:;"></a></li> -->
-              </ul>
-            </div>
-            <div class="suit-menu-one">
-              <div class="suit-menu-title">西装配饰</div>
               <ul class="suit-menu-2">
                 <li><a href="javascript:;">领结</a></li>
                 <li><a href="javascript:;">袖扣</a></li>
@@ -341,6 +335,7 @@
   </div>
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script>
     // 引入头部
     $("#headBody").load("head.html?v=1.0.0", function () {
@@ -350,6 +345,8 @@
     $("#bottomBody").load("bottom.html?v=1.0.0", function () {
       $("#bottom-parent").val(2);
     });
+    // 初始化轮播
+    $('.carousel').carousel()
     $('.suit-main-img').click(function () {
       window.location.href = 'suitList.html'
     })
@@ -358,6 +355,9 @@
       window.location.href = "suitList.html"
     })
     $('.suit-main-img').click(function () {
+      window.location.href = "suitList.html"
+    })
+    $('.suit-menu-title').click(function () {
       window.location.href = "suitList.html"
     })
   </script>

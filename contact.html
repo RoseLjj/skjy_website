@@ -71,13 +71,13 @@
             </div>
             <div class="form-group">
               <label for="inputEmail3" class="control-label">留言</label>
-              <div class="control-form-content">
+              <div class="control-form-content control-form-content-2">
                 <textarea class="form-control form-control2" placeholder="请输入您的留言" name="" id="" cols="30" rows="10"
                   value=""></textarea>
               </div>
             </div>
             <div class="form-group form-btn">
-              <button type="button" id="submit-btn" data-toggle="modal" data-target="#myModal">提交
+              <button type="button" id="submit-btn">提交
                 >></button>
             </div>
           </form>
@@ -110,7 +110,7 @@
   <!-- <button id="suc-btn">显示提交成功按钮</button> -->
   <div class="sk-bottom" id="bottomBody"></div>
   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
   <script>
     $(function () {
       // 引入头部
@@ -127,6 +127,16 @@
         setTimeout(function () {
           $('.success-tips').fadeOut()
         }, 3000)
+      })
+      $('.dropdown-menu li').click(function(){
+        var num = $(this).attr('data-num');
+        var text = $(this).text()
+        console.log(num,text)
+        $('.dropdown .btn span').eq(0).text(text)
+        $('.dropdown .btn').attr('data-num', num)
+      })
+      $('#submit-btn').click(function(){
+        $('#myModal').modal('show')
       })
     })
   </script>

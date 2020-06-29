@@ -396,7 +396,7 @@ body {
 
 .about-box {
   background-image: url(../images/contact_bg@2x.png);
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -432,6 +432,7 @@ body {
   height: 674px;
   padding: 14px;
   background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .info-container .suit-one .suit-one-img img {
@@ -446,6 +447,7 @@ body {
   padding: 60px 30px;
   padding-bottom: 10px;
   overflow-y: auto;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .info-container .suit-one .suit-one-right .suit-type {
@@ -503,6 +505,12 @@ body {
   margin-top: 20px;
 }
 
+.info-container .suit-details .suit-details-main .row > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .info-container .suit-details .suit-phone {
   text-align: right;
   margin-top: 65px;
@@ -517,6 +525,12 @@ body {
   display: inline-block;
   color: #AB9779;
   font-size: 16px;
+}
+
+.info-container .suit-details .suit-phone .suit-phone-btn:hover, .info-container .suit-details .suit-phone .suit-phone-btn:active {
+  background-color: #AB9779;
+  color: #fff;
+  border-color: #AB9779;
 }
 
 .info-container .suit-details .suit-phone .suit-phone-num {
@@ -555,6 +569,7 @@ body {
   padding: 20px;
   background-color: #fff;
   margin-top: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .info-container .suit-recommend .suit-more-list .suit-list-one {
@@ -566,6 +581,7 @@ body {
 
 .info-container .suit-recommend .suit-more-list .suit-list-one img {
   width: 100%;
+  cursor: pointer;
 }
 
 .suit-banner {
@@ -665,6 +681,7 @@ body {
   font-size: 15px;
   text-align: left;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .suit-menu .suit-menu-one ul {
@@ -731,6 +748,11 @@ body {
 .suit-list-main .suit-list-one img {
   width: 305px;
   height: 356px;
+  cursor: pointer;
+}
+
+.suit-list-main .suit-list-one img:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .suit-list-main .suit-list-one .suit-list-info {
@@ -740,6 +762,7 @@ body {
 .suit-list-main .suit-list-one .suit-list-info .suit-list-title {
   font-size: 17px;
   color: rgba(4, 0, 0, 0.65);
+  cursor: pointer;
 }
 
 .suit-list-main .suit-list-one .info-btn {
@@ -761,4 +784,56 @@ body {
   background: #ab9779;
   border: 1px solid rgba(0, 0, 0, 0.15);
   color: #fff;
+}
+
+.modal .modal-dialog {
+  width: 480px;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.modal .modal-dialog .modal-content {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.modal .modal-dialog .modal-content .modal-title {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #AB9779;
+  font-size: 16px;
+}
+
+.modal .modal-dialog .modal-content .modal-info {
+  margin-bottom: 10px;
+}
+
+.modal .modal-dialog .modal-content .modal-info span:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.modal .modal-dialog .modal-content .modal-tip {
+  margin-bottom: 20px;
+}
+
+.modal .modal-dialog .modal-content .modal-btn button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.modal .modal-dialog .modal-content .modal-btn button:nth-of-type(2) {
+  margin-left: 20px;
+  background: #040000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.modal .modal-dialog .modal-content .modal-btn button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
 }

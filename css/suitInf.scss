@@ -26,6 +26,7 @@ body{
       height: 674px;
       padding: 14px;
       background-color: #fff;
+      box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2);
       img{
         width: 100%;
         height: 100%;
@@ -38,6 +39,7 @@ body{
       padding: 60px 30px;
       padding-bottom: 10px;
       overflow-y: auto;
+      box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2);
       .suit-type{
         font-size: 25px;
         position: relative;
@@ -85,6 +87,13 @@ body{
       line-height: 40px;
       border:1px solid rgba(4,0,0,0.2);
       margin-top: 20px;
+      .row{
+        &>div{
+          overflow: hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+        }
+      }
     }
     .suit-phone{
       text-align: right;
@@ -98,6 +107,11 @@ body{
         display: inline-block;
         color: #AB9779;
         font-size: 16px;
+        &:hover,&:active{
+          background-color: #AB9779;
+          color: #fff;
+          border-color: #AB9779;
+        }
       }
       .suit-phone-num{
         font-size: 15px;
@@ -131,13 +145,16 @@ body{
       padding: 20px;
       background-color: #fff;
       margin-top: 20px;
+      box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2);
       .suit-list-one{
         width: 19.6%;
         padding: 0 15px;
         box-sizing: border-box;
         display: inline-block;
+        
         img{
           width: 100%;
+          cursor: pointer;
         }
       }
     }
@@ -226,6 +243,7 @@ body{
       font-size: 15px;
       text-align: left;
       margin-bottom: 10px;
+      cursor: pointer;
     }
     ul{
       text-align: left;
@@ -288,12 +306,17 @@ body{
     img{
       width: 305px;
       height: 356px;
+      cursor: pointer;
+      &:hover{
+        box-shadow:0px 0px 5px 0px rgba(0,0,0,0.2);
+      }
     }
     .suit-list-info{
       margin-top: 20px;
       .suit-list-title{
         font-size: 17px;
         color: $color-65;
+        cursor: pointer;
       }
     }
     .info-btn{
@@ -311,6 +334,58 @@ body{
           background:rgba(171,151,121,1);
           border:1px solid rgba(0,0,0,0.15);
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.modal{
+  .modal-dialog{
+    width: 480px;
+    top: 50%;
+    margin-top: -100px;
+    .modal-content{
+      padding: 32px 0;
+      text-align: center;
+      .modal-title{
+        margin-bottom: 20px;
+        font-size: 15px;
+        color:#AB9779;
+        font-size: 16px;
+      }
+      .modal-info{
+        margin-bottom: 10px;
+        span{
+          &:nth-of-type(1){
+            margin-right: 20px;
+          }
+        }
+      }
+      .modal-tip{
+        margin-bottom: 20px;
+        // padding-right: 105px;
+        // text-align: right;
+      }
+      .modal-btn{
+        button{
+          width:120px;
+          height:40px;
+          border:1px solid rgba(0,0,0,0.65);
+          &:nth-of-type(2){
+            margin-left: 20px;
+            background:rgba(4,0,0,1);
+            color: #fff;
+            font-size: $font-size-14;
+          }
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+          }
         }
       }
     }

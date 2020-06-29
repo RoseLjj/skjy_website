@@ -396,7 +396,7 @@ body {
 
 .about-box {
   background-image: url(../images/contact_bg@2x.png);
-  background-size: 100% auto;
+  background-size: 100% 100%;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -469,11 +469,13 @@ body {
 .home-box .brand-top .fr .brand-title-en {
   text-align: right;
   font-size: 54px;
+  font-weight: 200;
 }
 
 .home-box .brand-top .fr .brand-title-zh {
   text-align: right;
   font-size: 28px;
+  font-weight: 200;
 }
 
 .home-box .brand-top .fr .brand-line {
@@ -547,6 +549,7 @@ body {
   font-size: 14px;
   color: #fff;
   opacity: 0.65;
+  font-weight: 200;
 }
 
 .home-box .brand-bottom .active .brand-one-info {
@@ -586,6 +589,7 @@ body {
   font-size: 28px;
   line-height: 37px;
   position: relative;
+  font-weight: 200;
 }
 
 .home-box-head .home-box-title .home-title-en span {
@@ -596,6 +600,10 @@ body {
 
 .home-business {
   margin-top: 80px;
+}
+
+.home-business .home-title-en span {
+  font-weight: 200;
 }
 
 .home-business .home-box-content {
@@ -633,10 +641,20 @@ body {
   font-size: 18px;
   line-height: 50px;
   font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 50px;
 }
 
 .home-business .tailor-img-list .tailor-one .tailor-img-text {
   font-size: 14px;
+  color: rgba(4, 0, 0, 0.85);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 40px;
 }
 
 .home-business .sk-btn {
@@ -648,8 +666,12 @@ body {
   text-align: center;
 }
 
+.home-customer .home-title-en {
+  font-weight: 200;
+}
+
 .home-customer .customer-img {
-  margin-top: 10px;
+  margin-top: 8px;
   color: rgba(4, 0, 0, 0.65);
   text-align: center;
   font-size: 20px;
@@ -705,6 +727,10 @@ body {
   margin-bottom: 30px;
 }
 
+.home-suit .suit-img-list .suit-one .suit-title span {
+  cursor: pointer;
+}
+
 .home-suit .suit-img-list .suit-one .suit-title .suit-title-zh {
   font-size: 28px;
   letter-spacing: 2px;
@@ -713,10 +739,12 @@ body {
 .home-suit .suit-img-list .suit-one .suit-title .suit-title-en {
   font-size: 22px;
   color: rgba(4, 0, 0, 0.45);
+  font-weight: 200;
 }
 
 .home-suit .suit-img-list .suit-one .suit-img img {
   width: 100%;
+  cursor: pointer;
 }
 
 .home-suit .suit-img-list .suit-one .suit-more {

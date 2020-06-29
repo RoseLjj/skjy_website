@@ -46,7 +46,8 @@
           <div class="suit-menu-one">
             <div class="suit-menu-title">男职业装</div>
             <ul>
-              <li class="active"><a href="javascript:;">男士商务西装</a></li>
+              <!-- 选中的效果class="active" -->
+              <li><a href="javascript:;">男士商务西装</a></li>
               <li><a href="javascript:;">男士休闲西装</a></li>
               <li><a href="javascript:;">男士宴会礼服</a></li>
               <li><a href="javascript:;">男士西服马甲</a></li>
@@ -80,12 +81,6 @@
           </div>
           <div class="suit-menu-one">
             <div class="suit-menu-title">POLO衫</div>
-            <ul>
-              <!-- <li><a href="javascript:;"></a></li> -->
-            </ul>
-          </div>
-          <div class="suit-menu-one">
-            <div class="suit-menu-title">西装配饰</div>
             <ul>
               <!-- <li><a href="javascript:;"></a></li> -->
             </ul>
@@ -213,7 +208,7 @@
       window.location.href = 'suitInfo.html'
     })
 
-    $('.suit-list-one img').click(function () {
+    $('.suit-list-one img, .suit-list-title').click(function () {
       window.location.href = 'suitInfo.html'
     })
   </script>
